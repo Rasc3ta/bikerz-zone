@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bikerz-zone</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- daisy ui setup : -->
 
     <link
@@ -20,7 +27,8 @@
         theme: {
           extend: {
             colors: {
-                nav_color: '#264653',
+              prime: "#E76F51",
+              nav_color: "#264653",
               clifford: "#da373d",
             },
           },
@@ -39,9 +47,9 @@
       }
     </style>
   </head>
-  <body>
-    <header>
-      <nav>
+  <body class="font-['poppins']">
+    <header class="bg-nav_color flex flex-col">
+      <nav class="z-50">
         <div class="navbar bg-[#264653] bg-base-100">
           <div class="navbar-start w-full justify-end sm:hidden">
             <div class="drawer w-auto drawer-end">
@@ -86,9 +94,7 @@
                     <a class="active:bg-nav_color">News</a>
                   </li>
                   <li class="rounded-lg">
-                    <a class="active:bg-nav_color"
-                      >Contact</a
-                    >
+                    <a class="active:bg-nav_color">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -112,7 +118,142 @@
           </div>
         </div>
       </nav>
-      <banner></banner>
+      <banner class="text-white">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item  relative w-full flex flex-row flex-wrap justify-between md:justify-evenly ">
+            <div class="p-4 sm:ml-7 md:pl-10 flex flex-col mb-14 max-w-80 md:max-w-96 lg:max-w-md ">
+              <p class=" text-base font-light">
+                Computer-controlled digital transistorized with electronic
+                advance
+              </p>
+              <h1 class="text-4xl font-semibold">Honda CBR 300R</h1>
+              <p class="text-base font-light mb-6">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <button class="btn bg-prime max-w-40 border-none text-white text-base font-medium">Purchase</button>
+            </div>
+            <img
+              src="./images/slider/bike1.png"
+              class="w-full max-w-64 sm:max-w-72  mb-8 lg:max-w-md object-contain"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/4"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle glass btn-xs flex-nowrap min-h-0"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle glass btn-xs flex-nowrap min-h-0"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item  relative w-full flex flex-row flex-wrap justify-between md:justify-evenly ">
+            <div class="p-4 sm:ml-7 md:pl-10 flex flex-col mb-14 max-w-80 md:max-w-96 lg:max-w-md ">
+              <p class=" text-base font-light">
+                Computer-controlled digital transistorized with electronic
+                advance
+              </p>
+              <h1 class="text-4xl font-semibold">Honda CBR 300R</h1>
+              <p class="text-base font-light mb-6">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <button class="btn bg-prime max-w-40 border-none text-white text-base font-medium">Purchase</button>
+            </div>
+            <img
+              src="./images/slider/bike2.png"
+              class="w-full max-w-64 sm:max-w-72  mb-8 lg:max-w-md object-contain"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/4"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle glass btn-xs flex-nowrap min-h-0"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle glass btn-xs flex-nowrap min-h-0"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item  relative w-full flex flex-row flex-wrap justify-between md:justify-evenly ">
+          <div class="p-4 sm:ml-7 md:pl-10 flex flex-col mb-14 max-w-80 md:max-w-96 lg:max-w-md ">
+              <p class=" text-base font-light">
+                Computer-controlled digital transistorized with electronic
+                advance
+              </p>
+              <h1 class="text-4xl font-semibold">Honda CBR 300R</h1>
+              <p class="text-base font-light mb-6">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <button class="btn bg-prime max-w-40 border-none text-white text-base font-medium">Purchase</button>
+            </div>
+            <img
+              src="./images/slider/bike3.png"
+              class="w-full max-w-64 sm:max-w-72  mb-8 lg:max-w-md object-contain"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/4"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle glass btn-xs flex-nowrap min-h-0"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle glass btn-xs flex-nowrap min-h-0"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item  relative w-full flex flex-row flex-wrap justify-between md:justify-evenly ">
+          <div class="p-4 sm:ml-7 md:pl-10 flex flex-col mb-14 max-w-80 md:max-w-96 lg:max-w-md ">
+              <p class=" text-base font-light">
+                Computer-controlled digital transistorized with electronic
+                advance
+              </p>
+              <h1 class="text-4xl font-semibold">Honda CBR 300R</h1>
+              <p class="text-base font-light mb-6">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <button class="btn bg-prime max-w-40 border-none text-white text-base font-medium">Purchase</button>
+            </div>
+            <img
+              src="./images/slider/bike4.png"
+              class="w-full max-w-64 sm:max-w-72  mb-8 lg:max-w-md object-contain"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/4"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle glass btn-xs flex-nowrap min-h-0"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle glass btn-xs flex-nowrap min-h-0"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+      </banner>
     </header>
     <main></main>
     <footer></footer>
