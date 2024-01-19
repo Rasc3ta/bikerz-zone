@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikerz-zone</title>
+
+    <!-- daisy ui setup : -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+                nav_color: '#264653',
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- css styles -->
+    <style>
+      :root {
+        --nav-color: #264653;
+      }
+
+      .menu li > :not(ul):not(.menu-title):not(details):active {
+        background-color: var(--nav-color);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar bg-[#264653] bg-base-100">
+          <div class="navbar-start w-full justify-end sm:hidden">
+            <div class="drawer w-auto drawer-end">
+              <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+
+              <div class="drawer-content">
+                <!-- Page content here -->
+                <label for="my-drawer-4" class="drawer-button btn btn-ghost">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 rotate-180 w-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </label>
+              </div>
+              <div class="drawer-side">
+                <label
+                  for="my-drawer-4"
+                  aria-label="close sidebar"
+                  class="drawer-overlay"
+                ></label>
+                <ul
+                  class="menu p-4 w-44 min-h-full bg-base-200 text-base-content"
+                >
+                  <!-- Sidebar content here -->
+                  <li class="rounded-lg">
+                    <a class="active:bg-nav_color">Home</a>
+                  </li>
+                  <li class="rounded-lg">
+                    <a class="active:bg-nav_color">Shop</a>
+                  </li>
+                  <li class="rounded-lg">
+                    <a class="active:bg-nav_color">News</a>
+                  </li>
+                  <li class="rounded-lg">
+                    <a class="active:bg-nav_color"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="navbar-end hidden w-full pr-36 justify-end gap-24 sm:flex"
+          >
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-white">Home</a></li>
+              <li><a class="text-white">Shop</a></li>
+              <li><a class="text-white">News</a></li>
+              <li><a class="text-white">Contact</a></li>
+            </ul>
+            <div>
+              <a
+                class="btn bg-[#E76F51] hover:bg-[#E76F51] px-6 active:bg-[#f78062] text-white border-none"
+                >Login</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <banner></banner>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
